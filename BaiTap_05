@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Thực Hành Số 05</title>
+</head>
+<body>
+<form>
+    <h1 style="background-color:black; color:white;">HR Management</h1>
+    <td align="right">
+    <a href="#">Home</a> 
+    <a href="#">Contact</a>
+
+    <div style="text-align: right;">
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
+    </div>
+    </td>
+
+<hr>
+
+<h2>Employee</h2>
+<div style="text-align: right;">
+<button style="background-color:blue; color:white;">+ Add</button>
+</div>
+</form>
+
+<table cellpadding="5" cellspacing="0" style="border-collapse:collapse;">
+    <tr style="border-collapse:collapse;">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Position</th>
+        <th>Action</th>
+    </tr>
+
+    <tr style="border-collapse:collapse;">
+        <td>1</td>
+        <td>Fatima Beatriz</td>
+        <td>FatimaBeatriz@gmail.com</td>
+        <td>0985674321</td>
+        <td>Staff</td>
+        <td>
+            <button style="background-color:yellow; color:black">Edit</button>
+            <button style="background-color:red; color:white;">Delete</button>
+        </td>
+    </tr>
+
+    <tr style="border-collapse:collapse;">
+        <td>2</td>
+        <td>Gabriel Hanna</td>
+        <td>GabrielHanna@gmail.com</td>
+        <td>0353674231</td>
+        <td>Staff</td>
+        <td>
+           <button style="background-color:yellow; color:black">Edit</button>
+           <button style="background-color:red; color:white;">Delete</button>
+        </td>
+    </tr>
+
+    <tr style="border-collapse:collapse;">
+        <td>3</td>
+        <td>Charles Diya</td>
+        <td>CharlesDiya@gmail.com</td>
+        <td>0347658833</td>
+        <td>Staff</td>
+        <td>
+            <button style="background-color:yellow; color:black">Edit</button>
+            <button style="background-color:red; color:white;">Delete</button>
+        </td>
+    </tr>
+
+    <tr style="border-collapse:collapse;">
+        <td>4</td>
+        <td>Frank Lamdo</td>
+        <td>FrankLamdo@gmail.com</td>
+        <td>0976444768</td>
+        <td>Manager</td>
+        <td>
+            <button style="background-color:yellow; color:black">Edit</button>
+            <button style="background-color:red; color:white;">Delete</button>
+        </td>
+    </tr>
+
+    <tr style="border-collapse:collapse;">
+        <td>5</td>
+        <td>Louis Tom</td>
+        <td>LouisTom@gmail.com</td>
+        <td>0789568223</td>
+        <td>Staff</td>
+        <td>
+            <button style="background-color:yellow; color:black">Edit</button>
+            <button style="background-color:red; color:white;">Delete</button>
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h3 style="background-color:blue; color:white;">New Employee</h3>
+
+<form>
+    <label>Name</label><br>
+    <input type="text"><br><br>
+
+    <div style="text-align: right;">
+    <label>Email</label><br>
+    <input type="email"><br><br>
+    </div>
+
+    <label>Phone</label><br>
+    <input type="text"><br><br>
+
+    <div style="text-align: right;">
+    <label>Position</label><br>
+    <select size="4">
+        <option style="background-color:blue; color:white;">-- Select Position --</option>
+        <option>Staff</option>
+        <option>Manager</option>
+        <option>CEO</option>
+    </select><br><br>
+    </div>
+
+    <label>Sex</label><br>
+    <input type="radio" name="sex"> Male
+    <input type="radio" name="sex"> Female
+    <br><br>
+
+    <div style="text-align: right;">
+    <button type="submit" style="background-color:green; color:white;">Save</button>
+    <button type="reset" style="background-color:grey; color:white;">Cancel</button>
+    </div>
+</form>
+
+</body>
+</html>

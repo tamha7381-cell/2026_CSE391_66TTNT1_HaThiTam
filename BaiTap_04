@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Thực Hành Số 04</title>
+</head>
+<body>
+<form>
+    <h1>Basic Info</h1>
+    <hr>
+    <label>Employee ID</label>
+    <input type="text" id="id" name="id" value="9"><br>
+
+    <label>Last Name</label>
+    <input type="text" id="Lname" name="Lname" value="Dodsworth"><br>
+
+    <label>First Name</label>
+    <input type="text" id="Fname" name="Fname" value="Anne"><br><br>
+
+    <label>Gender</label>
+    <input type="radio" id="gender" name="gender" value="male"> Male<br>
+    <input type="radio" id="gender" name="gender" value="female"> Female<br>
+    <input type="radio" id="gender" name="gender" value="xxx"> XXX<br>
+    <input type="radio" id="gender" name="gender" value="zzz" checked> ZZZ<br><br>
+
+    <label>Title</label>
+    <input type="text" id="title" name="title" value="Sales Representative"><br><br>
+
+    <label>Suffix</label>
+    <input type="text" id="suffix" name="suffix" value="Ms."><br><br>
+
+    <label>BirthDate</label>
+    <input type="text" id="birthday" name="birthdate" value="1969-07-02 00:00:00"><br><br>
+
+    <label>HireDate</label>
+    <input type="text" id="Hirdate" name="hiredate" value="1994-11-15 00:00:00"><br><br>
+
+    <label>SSN # (if applicable)</label>
+    <input type="text" id="ssn"name="ssn"><br><br>
+
+    <label>Reports To</label>
+    <select id="reports_to" name="reports_to">
+        <option>Buchanan</option>
+     </select>
+
+    <h2>Contact Info</h2>
+    <hr>
+
+    <label>Email</label>
+    <input type="email" id="email" name="email" placeholder="name@example.com"><br><br>
+
+    <label>Address</label>
+    <input type="text" id="address" name="address" value="7 Houndstooth Rd."><br><br>
+
+    <label>City</label>
+    <input type="text" id="city" name="city" value="London"><br><br>
+
+    <label>Region</label>
+    <input type="text" id="region" name="region"><br><br>
+
+    <label>Postal Code</label>
+    <input type="text" id="p_code" name="postal_code" value="WG2 7LT"><br><br>
+
+    <label>Country</label>
+    <select id="country" name="country">
+        <option>Russian Federation</option>
+    </select><br><br>
+
+    <label>US Home Phone</label>
+    <input type="text" id="phone" name="phone" value="(234)234-2342"><br><br>
+
+    <label>Photo</label>
+    <input type="text" id="photo" name="photo" value="EmpID9.bmp"><br>
+
+    <h3>Optional Info</h3>
+    <hr>
+
+    <label>Notes</label>
+    <textarea id="notes" name="notes" rows="5" cols="60">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ
+    </textarea><br><br>
+
+    <label>Preferred Shift</label><br>
+    <input type="checkbox" id="shift" name="shift" >Regular <br>
+    <input type="checkbox" id="shift" name="shift" checked> Gravy Yard<br>
+
+    <label>Active?</label>
+    <input type="checkbox" id="active" name="active" checked><br><br>
+
+    <label>Are you human?</label>
+    <input type="text" id="captcha" name="captcha" value="TIDAWO">
+    <button type="button">Click to change</button>
+
+    <hr>
+    <div style="text-align: right;">
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+    </div>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+    
