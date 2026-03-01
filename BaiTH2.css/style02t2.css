@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background: url("ocean.jpg") center/cover no-repeat;
+    color: white;
+    padding-bottom: 80px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.hero {
+    max-width: 500px;
+    margin: 100px auto 0;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 30px;
+}
+.hero button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: yellow;
+    cursor: pointer;
+}
+main {
+    background: #dff7f7;
+    padding: 30px;
+    text-align: center;
+}
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card {
+    width: 30%;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
