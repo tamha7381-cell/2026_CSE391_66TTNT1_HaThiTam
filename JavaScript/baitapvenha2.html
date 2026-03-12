@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin cá nhân</title>
+    <style>
+        body {
+            font-family: Arial;
+            width: 450px;
+            margin: auto; }
+
+        .step {
+            display: none; }
+
+        .step.active {
+            display: block; }
+
+        button {
+            padding: 10px;
+            margin-top: 15px;
+            background-color: yellow; }
+
+        .progress {
+            width: 100%;
+            height: 10px;
+            background: #ddd;
+            margin-bottom: 20px; }
+
+        .progress-bar {
+            height: 10px;
+            width: 0%;
+            background: green; }
+    </style>
+</head>
+<body>
+    <h2>Đăng ký</h2>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <form id="form">
+        <div class="step active" id="step1">
+
+            <h3>Bước 1: Thông tin cá nhân</h3>
+
+            <label>Họ tên</label>
+            <input type="text" id="fullname">
+
+            <label>Ngày sinh</label>
+            <input type="date" id="birth">
+
+            <p>Giới tính</p>
+
+            <label>
+                <input type="radio" name="gender" value="Nam">Nam</label>
+
+            <label>
+                <input type="radio" name="gender" value="Nữ">Nữ</label>
+            <br>
+            <button type="button" onclick="nextStep()">Tiếp theo</button>
+
+        </div>
+        
+        <div class="step" id="step2">
+
+            <h3>Bước 2: Thông tin tài khoản</h3>
+
+            <label>Email</label>
+            <br>
+            <input type="text" id="email">
+            <br><br>
+
+            <label>Mật khẩu</label><br>
+            <input type="password" id="password">
+            <br><br>
+
+            <label>Xác nhận mật khẩu</label><br>
+            <input type="password" id="confirm">
+            <br><br>
+
+            <button type="button" onclick="prevStep()">Quay lại</button>
+            <button type="button" onclick="nextStep()">Tiếp theo</button>
+        </div>
+
+        <div class="step" id="step3">
+
+            <h3>Bước 3: Xác nhận</h3>
+
+            <p id="summary"></p>
+
+            <button type="button" onclick="prevStep()">Quay lại</button>
+
+            <button type="submit">Đăng ký</button>
+        </div>
+    </form>
+    <script src="baitapvenha2.js"></script>
+ </body>
+</html>

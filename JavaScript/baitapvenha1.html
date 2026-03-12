@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <style>
+body {
+    font-family: Arial;
+    width: 450px;
+    margin: auto; }
+
+h2 {
+    text-align: center; }
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px; }
+
+.error {
+    color: red;
+    font-size: 13px;
+    display: none; }
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: gold;
+    border: none;
+    font-weight: bold; }
+
+.password-box {
+    position: relative; }
+
+.toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer; }
+
+#strengthBar {
+    height: 8px;
+    background: #ddd;
+    margin-top: 5px; }
+
+#strengthLevel {
+    height: 8px;
+    width: 0%; }
+
+#nameCount {
+    font-size: 12px; }
+
+    </style>
+</head>
+
+<body>
+    <h2>Đăng ký tài khoản</h2>
+
+    <form id="registerForm">
+        <label>Họ và tên</label>
+        <input type="text" id="fullname" maxlength="50">
+
+        <div id="nameCount">0 / 50</div>
+        <span class="error" id="fullnameError"></span>
+
+        <label>Email</label>
+        <input type="text" id="email">
+
+        <span class="error" id="emailError"></span>
+
+        <label>Số điện thoại</label>
+        <input type="text" id="phone">
+
+        <span class="error" id="phoneError"></span>
+
+        <label>Mật khẩu</label>
+
+    <div class="password-box">
+        <input type="password" id="password">
+        <span class="toggle" id="togglePass">👁</span>
+    </div>
+
+    <div id="strengthBar">
+        <div id="strengthLevel"></div>
+    </div>
+
+    <span class="error" id="passwordError"></span>
+
+    <label>Xác nhận mật khẩu</label>
+    <input type="password" id="confirm">
+
+    <span class="error" id="confirmError"></span>
+    <button type="submit">Đăng ký</button>
+</form>
+    <p id="success"></p>
+    <script src="baitapvenha1.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form đặt hàng</title>
+    <style>
+        body {
+            font-family: Arial;
+            width: 450px;
+            margin: auto; }
+
+        h2 {
+            text-align: center; }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],textarea,select{
+            width:100%;
+            padding:8px;
+            margin-top:5px;}
+
+        input[type="radio"]{
+            width:auto;
+            margin-right:8px;}
+
+        .error {
+            color: red;
+            font-size: 13px;
+            display: none; }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: gold;
+            border: none;
+            font-weight: bold; }
+
+        #summary {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            display: none; }
+
+        #noteCount {
+            font-size: 12px; }
+    </style>
+</head>
+
+<body>
+    <h2>Đặt hàng</h2>
+
+    <form id="orderForm">
+
+        <label>Sản phẩm</label>
+        <select id="product">
+            <option value="">-- Chọn sản phẩm --</option>
+            <option value="Áo">Áo</option>
+            <option value="Quần">Quần</option>
+            <option value="Giày">Giày</option>
+        </select>
+
+        <span class="error" id="productError"></span>
+        <label>Số lượng</label>
+        <input type="number" id="quantity">
+
+        <span class="error" id="quantityError"></span>
+        <label>Ngày giao</label>
+        <input type="date" id="date">
+
+        <span class="error" id="dateError"></span>
+        <label>Địa chỉ giao</label>
+        <input type="text" id="address">
+
+        <span class="error" id="addressError"></span>
+        <label>Ghi chú</label>
+        <textarea id="note" rows="3"></textarea>
+
+        <div id="noteCount">0 / 200</div>
+
+        <span class="error" id="noteError"></span>
+
+        <p>Phương thức thanh toán</p>
+        <label>
+            <input type="radio" name="pay" value="COD">COD</label>
+
+        <label>
+            <input type="radio" name="pay" value="Chuyển khoản">Chuyển khoản</label>
+
+        <label>
+            <input type="radio" name="pay" value="Ví">Ví điện tử</label>
+
+        <span class="error" id="payError"></span>
+
+        <p>
+            <b>Tổng tiền:</b>
+            <span id="total">0</span>
+            VND
+        </p>
+
+        <button type="submit">Đặt hàng</button>
+   </form>
+    <div id="summary"></div>
+    <script src="bai2_2.js"></script>
+</body>
+</html>
